@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- head is alll the properties of your page and metadata -->
+    <head>
+        <title>CSE110 Lab 2</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="/media/favicon.ico"/>
+    </head>
+
+    <!-- visible to user -->
+    <body>
+        <header>
+            <h1>World Domination Meeting Notes</h1>
+            <h2>10.03.2021</h3>
+            <h3>Attendees:</h3>
+            <ul>
+                <li>Darth Vader</li>
+                <li>Voldemort</li>
+                <li>Joker</li>
+                <li>Daniel Pak</li>
+            </ul>
+        </header>
+
+        <main>
+            <h1>Itinerary</h1>
+            <ol>
+                <li><a href="#lastWeekNotes">Notes from last week</a></li>
+                <li><a href="#newThings">New things for this week</a></li>
+                <li><a href="#QCC">Questions, Comments, Concerns</a></li>
+            </ol>
+
+
+            <section id="lastWeekNotes">
+                <h2>Notes from last week:</h2>
+                <ul>
+                    <li>Remember that we need to bring back focus to the main objective-<em>especially in the last week</em></li>
+                    <li>Project output has decreased by <strong>300%</strong> in the last 24 hours</li>
+                </ul>
+            </section>
+
+            <section id="newThings">
+                <h2>New things for this week:</h2>
+                <p>We need to do this and that in order to realize our full potential as a unit. This includes the such and such method of aggragating all of our resources.</p>
+                <ul>
+                    <li>Vader thinks it's a great idea; Joker disagrees.</li>
+                    <li>More 5G cell towers could do the trick.</li>
+                </ul>
+                <p>By October 20th, we need to have at least 30% world coverage.</p>
+            </section>
+
+            <section id="QCC">
+                <h2>Questions, Comments, Concerns:</h2>
+                <ul>
+                    <li>Are we the baddies?</li>
+                </ul>
+            </section>
+
+            <h2>Current Progess</h2>
+            <section >
+                <img src=screenshots/example.png alt="example picture" width="600">
+            </section>
+
+            <hr>
+
+            <h2>Meeting Records</h2>
+            <p><b>Video recording:</b></p>
+            <video controls width="600">
+                <source src="/media/video_test.mp4"
+                        type="video/mp4">
+            
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+            <p><i>Audio recording:</i></p>
+            <audio controls auto>
+                <source src="/media/audio_test.mp3" type="audio/mpeg">
+            </audio>
+            <hr>
+        </main>
+
+        <h2>Customer Service</h2>
+        <form>
+            <label for="fname">Full name:</label>
+            <input type="input"><br><br>
+            <fieldset>
+                <legend>Please choose your satisfaction level</legend>
+                <input type="radio" id="one" name="level">
+                <label for="one">1</label><br/>
+                <input type="radio" id="two" name="level">
+                <label for="two">2</label><br/>
+                <input type="radio" id="three" name="level">
+                <label for="three">3</label>
+            </fieldset><br>
+            
+
+            <input type="submit" value="Submit"><br><br>
+
+            <label for="complaint">Describe your issue:</label><br>
+            <textarea id="complaint" name="story" rows="5" cols="33">...</textarea>
+        </form>
+
+        <hr>
+
+        <nav>
+            <a href="README.md">README</a>
+        </nav>
+
+        <footer>Daniel Pak 2021</footer>
+    </body>
+</html>
