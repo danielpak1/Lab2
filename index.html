@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- head is alll the properties of your page and metadata -->
+    <!-- head is all the properties of your page and metadata -->
     <head>
         <title>CSE110 Lab 2</title>
         <meta charset="UTF-8">
-        <link rel="icon" type="image/x-icon" href="/media/favicon.ico"/>
+        <link rel="icon" type="image/x-icon" href="favicon.ico"/>
     </head>
 
     <!-- visible to user -->
     <body>
         <header>
-            <h1>World Domination Meeting Notes</h1>
-            <h2>10.03.2021</h3>
+            <h1>Meeting Notes</h1>
+            <h2>Date: 10.03.2021</h2>
             <h3>Attendees:</h3>
             <ul>
                 <li>Darth Vader</li>
@@ -28,7 +28,6 @@
                 <li><a href="#newThings">New things for this week</a></li>
                 <li><a href="#QCC">Questions, Comments, Concerns</a></li>
             </ol>
-
 
             <section id="lastWeekNotes">
                 <h2>Notes from last week:</h2>
@@ -56,7 +55,7 @@
             </section>
 
             <h2>Current Progess</h2>
-            <section >
+            <section>
                 <img src=screenshots/example.png alt="example picture" width="600">
             </section>
 
@@ -65,22 +64,23 @@
             <h2>Meeting Records</h2>
             <p><b>Video recording:</b></p>
             <video controls width="600">
-                <source src="/media/video_test.mp4"
-                        type="video/mp4">
-            
-                Sorry, your browser doesn't support embedded videos.
+                <source src="video_test.mp4" type="video/mp4">
             </video>
             <p><i>Audio recording:</i></p>
-            <audio controls auto>
-                <source src="/media/audio_test.mp3" type="audio/mpeg">
+            <audio controls>
+                <source src="audio_test.mp3" type="audio/mpeg">
             </audio>
             <hr>
+            <details>
+                <summary>Learn more...</summary>
+                You can learn more at <nav><a href="README.md">README</a></nav>
+            </details>
         </main>
 
         <h2>Customer Service</h2>
         <form>
-            <label for="fname">Full name:</label>
-            <input type="input"><br><br>
+            <label>Full name:</label>
+            <input type="text"><br><br>
             <fieldset>
                 <legend>Please choose your satisfaction level</legend>
                 <input type="radio" id="one" name="level">
@@ -90,19 +90,28 @@
                 <input type="radio" id="three" name="level">
                 <label for="three">3</label>
             </fieldset><br>
+
+            <label for="yourFeeling">How are you feeling?</label>
+            <input list="feeling" id="yourFeeling" name="yourFeeling" />
+            <datalist id="feeling">
+                <option value="Sad">
+                <option value="Mad">
+                <option value="Glad">
+                <option value="The Battle of Stalingrad">
+            </datalist><br><br>
+
+            <label for="method">How can we make this right?</label>
+            <select name="method" id="method">
+                <option value="refund">Refund</option>
+                <option value="giftCard">Gift card</option>
+            </select><br><br>
             
-
-            <input type="submit" value="Submit"><br><br>
-
             <label for="complaint">Describe your issue:</label><br>
-            <textarea id="complaint" name="story" rows="5" cols="33">...</textarea>
+            <textarea id="complaint" name="freeform" rows="5" cols="33">...</textarea><br>
+
+            <input type="button" value="Submit"><br><br>
+
         </form>
-
-        <hr>
-
-        <nav>
-            <a href="README.md">README</a>
-        </nav>
 
         <footer>Daniel Pak 2021</footer>
     </body>
